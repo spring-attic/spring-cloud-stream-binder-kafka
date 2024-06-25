@@ -1283,7 +1283,7 @@ public StreamsBuilderFactoryBeanCustomizer streamsBuilderFactoryBeanCustomizer()
 }
 ```
 
-`KafkaStreamsCustomizer` will be called by the `StreamsBuilderFactoryBeabn` right before the underlying `KafkaStreams` gets started.
+`KafkaStreamsCustomizer` will be called by the `StreamsBuilderFactoryBean` right before the underlying `KafkaStreams` gets started.
 
 There can only be one `StreamsBuilderFactoryBeanCustomizer` in the entire application.
 Then how do we account for multiple Kafka Streams processors as each of them are backed up by individual `StreamsBuilderFactoryBean` objects?
